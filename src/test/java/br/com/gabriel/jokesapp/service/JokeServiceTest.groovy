@@ -10,7 +10,7 @@ class JokeServiceTest extends Specification {
 
     void setup() {
         chuckNorrisQuotesMock = Mock(ChuckNorrisQuotes)
-        jokeService = new JokeService(chuckNorrisQuotes: chuckNorrisQuotesMock)
+        jokeService = new JokeService(chuckNorrisQuotesMock)
     }
 
     def "should return a random chuck norris quote"() {
